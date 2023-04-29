@@ -1,0 +1,17 @@
+
+<!--
+/**
+ * Copyright © Wafula-james Magebit Dev Test, All rights reserved.
+ * See my Github Portal.
+ *This Code sets the Template of our Block
+ *$this variable is refrencing our block class and we are calling the method getMagebitPageListWidgetTxt() 
+ which is returning the string ‘Magebit Page List Widget’.
+ */
+-->
+
+    <?php if($block->getData('widgettitle')): ?>
+                <h2 class='magebit-title'><?php echo $block->getData('widgettitle'); ?></h2>
+    <?php endif; ?>
+    <?php if($block->getData('widgetcontent')): ?>
+                <h2 class='magebit-content'><?php echo $block->getData('widgetcontent'); ?></h2>
+    <?php endif; ?>

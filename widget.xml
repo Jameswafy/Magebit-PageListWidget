@@ -1,0 +1,91 @@
+
+<!--
+/**
+Code for Creaing the PageListWidget.
+*/
+-->
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+                <widget class="Magebit\PageListWidget\Block\Widget\Samplewidget" id="magebit_pagelistwidget_samplewidget">
+                            <label>CMS Page List</label>
+                            <description>This is my Magebit Test Widget</description>
+							
+							<!--
+                            /**
+							Here, I am defining my Content Attributes, and Widget Content.
+							*/
+							-->
+							
+                            <parameters>
+                                        <parameter name="widgettitle" sort_order="10" visible="true" xsi:type="text" required="true">
+                                                    <label>Title:</label>
+													
+                                        </parameter>
+										
+				                        <parameter name="widgetcontent" sort_order="20" visible="true" xsi:type="select" required="true">
+										
+                                                    <label>Display Mode:</label>
+							<!--
+                            /**
+							Setting Options for the Display Mode.
+							*/
+							-->
+				            <options>
+
+                                   <option name="Specific_Pages" value="Specific Pages" >
+
+                                                    <label>Specific Pages</label>
+
+                                   </option>
+
+                                    <option name="All_Pages" value="All_Pages" selected="true">
+
+                                                   <label>All Pages</label>
+
+                                    </option>
+
+                            </options>
+							
+                                      </parameter>
+									  
+							<!--
+                            /**
+							Defining Parameters for the Selected Pages and Setting Select Options
+							*/
+							-->
+										
+                                    <parameter name="Selected_pages" sort_order="30" visible="true" xsi:type="select" required="true">
+                                                    
+													<label translate="true">Selected Pages</label>
+                            <options>
+
+                                    <option name="Home" value="Home">
+
+                                                <label>HomePage</label>
+
+                                    </option>
+
+                                    <option name="Computers" value="Computers" selected="true">
+
+                                               <label>Computers</label>
+
+                                    </option>
+
+                                    <option name="Phones" value="Phones">
+
+                                               <label>Phones</label>
+
+                                    </option>
+					
+					                <option name="Printers" value="Printers">
+
+                                               <label>Printers</label>
+
+                                    </option>
+
+                            </options>
+													
+													
+                                        </parameter>
+                            </parameters>
+                </widget>
+    </widgets>
